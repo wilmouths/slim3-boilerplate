@@ -8,7 +8,7 @@
 - [CSRF Protection](https://github.com/slimphp/Slim-Csrf)
 - [Validation engine](https://github.com/Respect/Validation)
 - [Twig engine](https://github.com/slimphp/Twig-View)
-- [Materiliaze](http://materializecss.com/)
+- [Materialize](http://materializecss.com/)
 
 ## Installation
 ### Create the project using Composer
