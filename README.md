@@ -9,6 +9,7 @@
 - [Validation engine](https://github.com/Respect/Validation)
 - [Twig engine](https://github.com/slimphp/Twig-View)
 - [Materialize](http://materializecss.com/)
+- [AntiXSS](https://github.com/voku/anti-xss)
 
 ## Installation
 ### Create the project using Composer
