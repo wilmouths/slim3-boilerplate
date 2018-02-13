@@ -1,0 +1,26 @@
+{% if flash.success %}
+    <script>
+        Materialize.toast('{{ flash.success }}', 3000, 'rounded green lighten-1')
+    </script>
+{% endif %}
+
+{% if flash.error %}
+    <script>
+        Materialize.toast('{{ flash.error }}', 3000, 'rounded red lighten-1')
+    </script>
+<div class="alert alert-danger"></div>
+{% endif %}
+
+{% if flash.info %}
+    <script>
+        Materialize.toast('{{ flash.info }}', 3000, 'rounded blue lighten-1')
+    </script>
+{% endif %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $('.tooltipped').tooltip();
+        });
+    </script>
+{% endblock %}

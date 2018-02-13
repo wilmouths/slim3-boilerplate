@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Middlewares\Twig;
+
+use Slim\Http\Request;
+use Slim\Http\Response;
+use App\Utils\Session;
+
+/**
+ * AuthMiddleware.php
+ *
+ * Create Twig var to access user informations
+ *
+ * @package    Middlewares
+ * @author     WILMOUTH Steven
+ * @version    1
+ */
+class AuthMiddleware
+{
+
+    private $twig;
+
+    /**
+     * AuthMiddleware constructor.
+     * @param \Twig_Environment $twig
+     */
+    public function __construct(\Twig_Environment $twig)
+    {
+        $this->twig = $twig;
+    }
+
+    /**
+     * Invoke middleware
+     * @param Request $request
+     * @param Response $response
+     * @param $next
+     * @return Response
+     */
+    public function __invoke(Request $request, Response $response, $next)
+    {
+        $this->twig->addGlobal('auth', Session::isLogged('user') ?  Session::get('user') : []);
+        return $next($request, $response);
+    }
+
+}

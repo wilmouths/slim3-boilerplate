@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Controllers;
+
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
+class AppController extends BaseController
+{
+
+    public function index(RequestInterface $request, ResponseInterface $response)
+    {
+        $this->render($response, 'app/index');
+    }
+
+}

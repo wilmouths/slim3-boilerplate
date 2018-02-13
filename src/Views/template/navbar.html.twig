@@ -1,0 +1,25 @@
+<nav>
+    <div class="nav-wrapper cyan darken-4">
+        <a href="{{ path_for('index') }}" class="brand-logo center">{{ picker('app.name') }}</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a href="{{ path_for('index') }}">Accueil</a>
+            </li>
+            {% if auth %}
+                <li>
+                    <a href="{{ path_for('user.view') }}">Mon compte</a>
+                </li>
+                <li>
+                    <a href="{{ path_for('user.logout') }}">Déconnexion</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{{ path_for('user.login.form') }}">Connexion</a>
+                </li>
+                <li>
+                    <a href="{{ path_for('user.register.form') }}">Inscription</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

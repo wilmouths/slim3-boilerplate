@@ -1,0 +1,47 @@
+{% extends "layouts/layout.html.twig" %}
+
+{% set title = 'Connexion' %}
+
+{% block content %}
+
+    <div class="row">
+        <h2 class="col s12">Connexion</h2>
+        <div class="divider"></div>
+
+        <div class="section">
+            <form class="col s12" action="{{ path_for('user.login') }}" method="post">
+                {{ csrf() }}
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="mail" name="mail" class="{% if flash.errors.mail %}invalid{% endif %}" type="email" value="{{ persistValues.mail }}" required>
+                        <label for="mail">Adresse email</label>
+                        <div class="has-herror-msg">
+                            {% if flash.errors.mail %}{{ flash.errors.mail }}{% endif %}
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" name="password" class="{% if flash.errors.email %}invalid{% endif %}" type="password" required>
+                        <label for="password" data-error="Mot de passe invalide.">Mot de passe</label>
+                        <div class="has-herror-msg">
+                            {% if flash.errors.password %}{{ flash.errors.password }}{% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="waves-effect waves-light btn blue">Connexion</button>
+                <a href="{{ path_for('user.register.form') }}" class="waves-effect waves-light btn red">Inscription</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block css %}
+    <style>
+        .has-herror-msg {
+            color: red;
+            font-size: 0.8em;
+            margin-top: -20px;
+        }
+    </style>
+{% endblock %}
