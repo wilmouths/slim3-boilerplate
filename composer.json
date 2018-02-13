@@ -1,5 +1,13 @@
 {
-    "name": "swilm",
+    "name": "slim3-boilerplate",
+    "version": "1.0.0",
+    "description": "Skeleton to start quickly with Slim-Framework",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Manghao/slim3-boilerplate.git"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/Manghao/slim3-boilerplate#readme",
     "authors": [
         {
             "name": "WILMOUTH Steven",
@@ -22,5 +30,8 @@
     	"psr-4": {
     		"App\\": "src/"
     	}
+    },
+    "scripts": {
+        "start": "php -S localhost:8080"
     }
 }
