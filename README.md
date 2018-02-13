@@ -17,3 +17,8 @@
 $ composer create-project manghao/slim3-boilerplate [project-name]
 ```
 
+## Database
+### Create user table
+```
+$ php database/database.php
+```
