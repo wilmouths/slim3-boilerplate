@@ -16,14 +16,14 @@
                     <div class="input-field col s12">
                         <input id="mail" name="mail" class="{% if flash.errors.mail %}invalid{% endif %}" type="email" value="{{ persistValues.mail }}" required>
                         <label for="mail">Adresse email</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.mail %}{{ flash.errors.mail }}{% endif %}
                         </div>
                     </div>
                     <div class="input-field col s12">
                         <input id="password" name="password" class="{% if flash.errors.email %}invalid{% endif %}" type="password" required>
                         <label for="password" data-error="Mot de passe invalide.">Mot de passe</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.password %}{{ flash.errors.password }}{% endif %}
                         </div>
                     </div>
@@ -38,7 +38,7 @@
 
 {% block css %}
     <style>
-        .has-herror-msg {
+        .has-error-msg {
             color: red;
             font-size: 0.8em;
             margin-top: -20px;

@@ -16,14 +16,14 @@
                     <div class="input-field col s6">
                         <input id="last_name" name="last_name" type="text" class="{% if flash.errors.last_name %}invalid{% endif %}" value="{{ persistValues.last_name }}" required>
                         <label for="last_name">Nom</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.last_name %}{{ flash.errors.last_name }}{% endif %}
                         </div>
                     </div>
                     <div class="input-field col s6">
                         <input id="first_name" name="first_name" type="text" class="{% if flash.errors.first_name %}invalid{% endif %}" value="{{ persistValues.first_name }}" required>
                         <label for="first_name">Prénom</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.first_name %}{{ flash.errors.first_name }}{% endif %}
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="input-field col s12">
                         <input id="mail" name="mail" type="email" class="{% if flash.errors.mail %}invalid{% endif %}" value="{{ persistValues.mail }}" required>
                         <label for="mail">Email</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.mail %}{{ flash.errors.mail }}{% endif %}
                         </div>
                     </div>
@@ -43,14 +43,14 @@
                     <div class="input-field col s6">
                         <input id="password" name="password" type="password" class="{% if flash.errors.password %}invalid{% endif %}" required>
                         <label for="password">Mot de passe</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.password %}{{ flash.errors.password }}{% endif %}
                         </div>
                     </div>
                     <div class="input-field col s6">
                         <input id="password_repeat" name="password_repeat" type="password" class="{% if flash.errors.password_repeat %}invalid{% endif %}" required>
                         <label for="password_repeat">Mot de passe (vérification)</label>
-                        <div class="has-herror-msg">
+                        <div class="has-error-msg">
                             {% if flash.errors.password_repeat %}{{ flash.errors.password_repeat }}{% endif %}
                         </div>
                     </div>
@@ -65,7 +65,7 @@
 
 {% block css %}
     <style>
-        .has-herror-msg {
+        .has-error-msg {
             color: red;
             font-size: 0.8em;
             margin-top: -20px;
