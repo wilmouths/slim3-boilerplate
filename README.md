@@ -22,3 +22,6 @@ $ composer create-project manghao/slim3-boilerplate [project-name]
 ```
 $ php database/database.php
 ```
+
+## API Documentation
+[Documentation](https://manghao.github.io/slim3-boilerplate/)
