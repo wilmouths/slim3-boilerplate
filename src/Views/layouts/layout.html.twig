@@ -18,12 +18,12 @@
 <body>
 
     {% block navbar %}
-        {% include 'template/navbar.html.twig' %}
+        {% include 'layouts/template/navbar.html.twig' %}
     {% endblock %}
 
     <div class="container">
         {% block flash %}
-            {% include 'template/flash.html.twig' %}
+            {% include 'layouts/template/flash.html.twig' %}
         {% endblock %}
 
         {% block content %}{% endblock %}

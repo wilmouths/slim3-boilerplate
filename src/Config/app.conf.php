@@ -9,7 +9,7 @@
  * @version    1
  */
 return array(
-    'name' => 'SWILM', // Name displayed in html head
+    'name' => 'slim3-boilerplate', // Name displayed in html head
 
     'env' => 'dev' // prod
 );
