@@ -1,6 +1,7 @@
 {
     "name": "slim3-boilerplate",
     "version": "1.0.0",
+    "minimum-stability": "dev",
     "description": "Skeleton to start quickly with Slim-Framework",
     "repository": {
         "type": "git",
