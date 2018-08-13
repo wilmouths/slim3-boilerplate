@@ -1,18 +1,18 @@
 {
-    "name": "manghao/slim3-boilerplate",
+    "name": "wilmouths/slim3-boilerplate",
     "version": "1.0.0",
     "description": "Skeleton to start quickly with Slim-Framework",
     "keywords": ["slim", "eloquent", "twig", "csrf", "validation", "boilerplate", "skeleton", "materialize", "anti-xss"],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Manghao/slim3-boilerplate.git"
+        "url": "git+https://github.com/wilmouths/slim3-boilerplate.git"
     },
     "license": "MIT",
-    "homepage": "https://github.com/Manghao/slim3-boilerplate#readme",
+    "homepage": "https://github.com/wilmouths/slim3-boilerplate#readme",
     "authors": [
         {
             "name": "WILMOUTH Steven",
-            "email": "steven@wilmouths.esy.es"
+            "email": "wilmouthsteven@gmail.com"
         }
     ],
     "require": {
