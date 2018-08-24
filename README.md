@@ -14,7 +14,7 @@
 ## Installation
 ### Create the project using Composer
 ```
-$ composer create-project manghao/slim3-boilerplate [project-name]
+$ composer create-project wilmouths/slim3-boilerplate [project-name]
 ```
 
 ## Database
@@ -24,4 +24,4 @@ $ php database/database.php
 ```
 
 ## API Documentation
-[Documentation](https://manghao.github.io/slim3-boilerplate/)
+WIP - [Documentation](https://wilmouths.github.io/slim3-boilerplate/)
