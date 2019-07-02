@@ -1,4 +1,4 @@
-![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 ![author](https://img.shields.io/badge/author-wilmouths-informational.svg)
 
